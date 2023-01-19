@@ -6,47 +6,41 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <h1 id="title">Dinner Form</h1>
-        <p id="description">Make a reservation!</p>
-        <form id="survey-form">
-            <fieldset>
-                <label id="name-label">Name: <input required id="name" type="text" placeholder="Enter your name" /></label>
-            </fieldset>
-            <fieldset>
-                <label id="email-label">Email: <input required id="email" type="email" placeholder="Enter your Email" /></label>
-            </fieldset>
-            <fieldset>
-                <label id="number-label">Number of people dining: <input required id="number" type="number" min="1" max="20" placeholder="#" /></label>
-            </fieldset>
-            <fieldset>
-                <label>What time best suits you?
-                    <select id="dropdown">
-                        <option value="">Select time</option>
-                        <option value="1">6:00pm</option>
-                        <option value="2">7:00pm</option>
-                        <option value="3">8:00pm</option>
-                        <option value="4">9:00pm</option>
-                        <option value="5">10:00pm</option>
-                    </select>
-                </label>
-            </fieldset>
-            <fieldset>
-                <label>Would you like to split the check afterwards?</label>
-                <label><input type="radio" value="yes" name="split-check" />Yes</label>
-                <label><input type="radio" value="no" name="split-check" />No</label>
-            </fieldset>
-            <fieldset>
-                <label>Select what food(s) you would like from the menu:</label>
-                <label><input type="checkbox" value="sushi" />Sushi</label>
-                <label><input type="checkbox" value="sushimi" />Sushimi</label>
-            </fieldset>
-            <fieldset>
-                <label>Any other comments or suggestions?
-                    <textarea placeholder="Enter your comment here..."></textarea>
-                </label>
-            </fieldset>
-            <input id="submit" type="submit" value="Submit" />
-        </form>
+        <div class="menu">
+            <h1 id="title">Dinner Form</h1>
+            <p id="description" class="description" >Make a reservation!</p>
+            <hr>
+            <form method="post" id="survey-form">
+                <fieldset>
+                    <label id="name-label">Name: <input required id="name" type="text" placeholder="Enter your name" /></label>
+                    <label id="email-label">Email: <input required id="email" type="email" placeholder="Enter your Email" /></label>
+                    <label id="number-label">Number of people dining: <input required id="number" type="number" min="1" max="20" placeholder="#" /></label>
+                    <label>What time best suits you?
+                        <select id="dropdown" required="">
+                            <option disabled="" selected="" value="">Select time</option>
+                            <option value="1">6:00pm</option>
+                            <option value="2">7:00pm</option>
+                            <option value="3">8:00pm</option>
+                            <option value="4">9:00pm</option>
+                            <option value="5">10:00pm</option>
+                        </select>
+                    </label>
+                    <label>Would you like to split the check afterwards?</label>
+                    <label><input type="radio" value="yes" name="split-check" class="inline" />Yes</label>
+                    <label><input type="radio" value="no" name="split-check" class="inline" />No</label>
+                    <label>Select what food(s) you would like from the menu:</label>
+                    <label><input type="checkbox" value="sushi" class="inline" />Sushi</label>
+                    <label><input type="checkbox" value="sushimi" class="inline" />Sashimi</label>
+                </fieldset>
+                <fieldset>
+                    <label>Any other comments or suggestions?
+                        <textarea placeholder="Enter your comment here..."></textarea>
+                    </label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+        </div>
+
 
     </body>
 </html>
