@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="menu">
+            <h1 id="title">Dinner Form</h1>
+            <p id="description" class="description" >Make a reservation!</p>
+            <hr>
+            <form method="post" id="survey-form">
+                <fieldset>
+                    <label class="important" id="name-label">Name: <input required id="name" type="text" placeholder="Enter your name" /></label>
+                    <label class="important" id="email-label">Email: <input required id="email" type="email" placeholder="Enter your Email" /></label>
+                    <label class="important" id="number-label">Number of people dining: <input required id="number" type="number" min="1" max="20" placeholder="#" /></label>
+                    <label>What time best suits you?
+                        <select id="dropdown" required="">
+                            <option disabled="" selected="" value="">Select time</option>
+                            <option value="1">6:00pm</option>
+                            <option value="2">7:00pm</option>
+                            <option value="3">8:00pm</option>
+                            <option value="4">9:00pm</option>
+                            <option value="5">10:00pm</option>
+                        </select>
+                    </label>
+                    <label class="important" >Would you like to split the check afterwards?</label>
+                    <label><input type="radio" value="yes" name="split-check" class="inline" />Yes</label>
+                    <label><input type="radio" value="no" name="split-check" class="inline" />No</label>
+                    <hr>
+                    <label class="important" >Select what food(s) you would like from the menu:</label>
+                    <label class="food-title">Sushi</label>
+                    <label><input type="checkbox" value="rainbow-roll" class="inline" />Rainbow Roll</label>
+                    <label><input type="checkbox" value="california-roll" class="inline" />California Roll</label>
+                    <label><input type="checkbox" value="spider-roll" class="inline" />Spider Roll</label>
+                    <label><input type="checkbox" value="dragon-roll" class="inline" />Dragon Roll</label>
+                    <label><input type="checkbox" value="Philedelphia-roll" class="inline" />Philedelphia Roll</label>
+                    <label><input type="checkbox" value="shrimp-tempura-roll" class="inline" />Shrimp Tempura Roll</label>
+                    <label><input type="checkbox" value="spicy-tuna-roll" class="inline" />Spicy Tuna Roll</label>
+                    <label><input type="checkbox" value="boston-roll" class="inline" />Boston Roll</label>
+                    <label class="food-title">Sashimi</label>
+                </fieldset>
+                <fieldset>
+                    <label>Any other comments or suggestions?
+                        <textarea placeholder="Enter your comment here..."></textarea>
+                    </label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+        </div>
 
+
+    </body>
+</html>
